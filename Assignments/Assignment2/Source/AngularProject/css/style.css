@@ -80,7 +80,6 @@ fieldset {
 }
 .formholder {
   background: #ecf0f1;
-  width: 550px;
   border-radius: 5px;
   padding-top: 10px;
 }
@@ -143,8 +142,8 @@ a:hover {
 
 .weatherModule {
   background:#f2f2f2;
-  height:20px;
-  width:25px;
+  height:150px;
+  width:250px;
   border: 1px dashed #ccc;
   padding: 1em;
 }
@@ -153,12 +152,9 @@ a:hover {
 .currentConditions {
   float: left;
 }
-.weatherModule {
-  padding: 1em;
-}
+
 
 .currentIcon {
   float: left;
-  margin: 0 .75em;
 }
 

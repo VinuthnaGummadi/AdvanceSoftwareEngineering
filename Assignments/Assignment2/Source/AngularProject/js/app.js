@@ -29,6 +29,7 @@ function Login($scope,$window){
 function Register($scope,$window){
 
     $scope.register = function () {
+        localStorage.setItem($scope.email , $scope.password);
         $window.location.href = 'index.html';
     }
 }

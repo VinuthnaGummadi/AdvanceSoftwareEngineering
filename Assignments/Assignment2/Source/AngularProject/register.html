@@ -13,15 +13,19 @@
     <form name="registerForm" role="form" class="formholder">
 
         <label name="username" >Preffered User Name</label>
-        <input type="username" name="username" id="username" />
+        <input type="username" name="username" id="username" ng-model="username" required/>
         <label name="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" ng-model="email" required/>
         <label name="password">Password</label>
-        <input type="password" name="password" id="password" />
+        <input type="password" name="password" id="password" ng-model="password" required/>
 
         <button ng-click="register()" class="button">Register</button>
+
+
     </form>
+
         </div>
+
 <script src="js/angular.js"></script>
 <script src="js/app.js"></script>
 </body>
