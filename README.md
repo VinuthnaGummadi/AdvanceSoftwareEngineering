@@ -6,3 +6,6 @@ https://github.com/VinuthnaGummadi/AdvanceSoftwareEngineering/wiki/AdvanceSoftwa
 
 Lab2:
 https://github.com/VinuthnaGummadi/AdvanceSoftwareEngineering/wiki/AdvanceSoftwareEngineering---Assignment-2
+
+Lab3:
+https://github.com/VinuthnaGummadi/AdvanceSoftwareEngineering/wiki/AdvanceSoftwareEngineering---Assignment-3
