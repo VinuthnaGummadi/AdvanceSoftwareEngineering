@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\libs\cardboard.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2403806886bbe517707b43afb5e5c9ce9883c4d2">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\2\cardboard_b04ae0c93fe3ff6180269fd685aad801513f9cd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.2.0_32533f532d8ae49021568f26320e57caa9f04e97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\vinuthna\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_4137ea32b03f7145eb5fbe41ee311c9eafcc24fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.2.0_6c4a783922156b63d403305c8df4a566dd2c2f01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.2.0_78a6b889e1ca7811069f06741066de3d73b594f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.0.0"
+        sha1="ca764548479ad5170c68099ea65e32fb948d6cf3">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_181e577c98dc098af8848dbe7403ef36d4481658\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.0.0"
+        sha1="531ed0d3cb5a97ff64008a64bcb0f18a8392cda8">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_268a7fa0cbd269754b050f63e16813cedd94c9e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.2.0_8fd5f3eb6d06af66c7e6ed5d163e25efd62ed2a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.2.0_926a6edf51a399c0a07f01ea29a068130037c173\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.2.0_a1edd1bed395dfe0b45ec4e36ee90fdb9c213d53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.2.0_de597b45106dd1665dccea34e1e5b66f984329d0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="014494352d2867b62344c846c8eca67bfb12cd4c">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_181e577c98dc098af8848dbe7403ef36d4481658\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="17d2778d92b52276da3d15ce409d66ae6575a070">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_268a7fa0cbd269754b050f63e16813cedd94c9e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\libs\libprotobuf-java-2.6-nano.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.0.0"
+        sha1="2ba3ce68542db5a4b672a22606e4fd4631ed5c4f">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\2\libprotobuf-java-2.6-nano_2d66e94d9376d27868f86131dff6b2f9e79136cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_f98786629a59c0959ce4a189135bac61704e33ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_3b9c73a97fa0d2edbcea83f0791cbc2b06a11949\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\libs\cardboard.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.0.0"
+        sha1="2403806886bbe517707b43afb5e5c9ce9883c4d2">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\2\cardboard_b04ae0c93fe3ff6180269fd685aad801513f9cd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\libs\libprotobuf-java-2.6-nano.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2ba3ce68542db5a4b672a22606e4fd4631ed5c4f">
+        <dex dex="S:\projects\google-cardboard-android-master\cardboard-java-master\CardboardSample\build\intermediates\transforms\dex\debug\folders\1000\2\libprotobuf-java-2.6-nano_2d66e94d9376d27868f86131dff6b2f9e79136cf\classes.dex" />
+    </item>
+
+</items>
