@@ -21,3 +21,6 @@ https://github.com/VinuthnaGummadi/AdvanceSoftwareEngineering/wiki/AdvanceSoftwa
 
 Lab7:
 https://github.com/VinuthnaGummadi/AdvanceSoftwareEngineering/wiki/AdvanceSoftwareEngineering-Assignment-7
+
+Lab8:
+https://github.com/VinuthnaGummadi/AdvanceSoftwareEngineering/wiki/AdvanceSoftwareEngineering---Assignment8
