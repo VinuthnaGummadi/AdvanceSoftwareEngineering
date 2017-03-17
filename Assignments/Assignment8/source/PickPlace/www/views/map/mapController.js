@@ -1,16 +1,9 @@
 angular.module('starter')
 
-.controller('MapController', [ '$scope', '$state', '$ionicLoading', 'GoogleMaps', 'Foursquare', 'Settings', 
-	function ($scope, $state, $ionicLoading, GoogleMaps, Foursquare, Settings) {
+.controller('MapController', [ '$scope', '$state', '$cordovaGeolocation', '$ionicLoading', 'GoogleMaps', 'Foursquare', 'Settings', 
+	function ($scope, $state, $cordovaGeolocation, $ionicLoading, GoogleMaps, Foursquare, Settings) {
 	
 	$scope.GoogleMaps = GoogleMaps;
-	
-	var apiKey = false;
-	var map = null;
-	var lat = 0;
-	var lng = 0;
-	var directionDisplay;
-	var directionsService = new google.maps.DirectionsService();
 
 	//GoogleMaps.init();
 
@@ -18,18 +11,13 @@ angular.module('starter')
 		$ionicLoading.show({
 			template: '<p class="item-icon-left">Pinpointing..<ion-spinner class="spinner-energized" icon="lines"/></p>'
 		});
-		directionsDisplay = new google.maps.DirectionsRenderer();
-			var latLng = new google.maps.LatLng(lat, lng);
-			var mapOptions = {
-				center: latLng,
-				zoom: 15,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
+		var options = {enableHighAccuracy: true};
 
-			map = new google.maps.Map(document.getElementById("map"), mapOptions);
-			directionsDisplay.setMap(map);
+		$cordovaGeolocation.getCurrentPosition(options).then(function(position) {
+
+			var myLat = position.coords.latitude;
+			var myLng = position.coords.longitude;
 			
-			calcRoute(myLat, myLng, venueLat, venueLng);
 			
 			Foursquare.whereAt(myLat, myLng, Settings.query, Settings.price, function(data) {
 				var numVenues = data['response']['groups'][0]['items'].length;
@@ -51,8 +39,8 @@ angular.module('starter')
 										data['response']['groups'][0]['items'][num]['venue']['location']['state'] + " " +
 										data['response']['groups'][0]['items'][num]['venue']['location']['postalCode'];
 				GoogleMaps.init(myLat, myLng, venueLat, venueLng);
-				var location = new google.maps.LatLng(venueLat, venueLng);
-				GoogleMaps.addNewMarker(location, venueName);
+				//var location = new google.maps.LatLng(venueLat, venueLng);
+				//GoogleMaps.addNewMarker(location, venueName);
 
 				$ionicLoading.hide();
 
@@ -67,31 +55,29 @@ angular.module('starter')
 
 	setTimeout($scope.chooseLocation, 1000);
 
-	function calcRoute(myLat, myLng, venueLat, venueLng) {
+	/*
+	Foursquare.whereAt(tLat, tLng, limit, Settings.query, function(data) {
+            
+            console.log(data['response']['groups'][0]['items']);
+            $scope.testers = data['response']['groups'][0]['items'];
+            
+            Locations.name = data['response']['groups'][0]['items'][0]['venue']['name'];
+            Locations.lat = data['response']['groups'][0]['items'][0]['venue']['location']['lat'];
+            Locations.lng = data['response']['groups'][0]['items'][0]['venue']['location']['lng'];
+            $scope.map.markers.now = {
+                lat: Locations.lat,
+                lng: Locations.lng,
+                focus: true
+            };
+        });
 
-		var start = new google.maps.LatLng(myLat, myLng);
-		var end = new google.maps.LatLng(venueLat, venueLng);
-		var bounds = new google.maps.LatLngBounds();
 
-		bounds.extend(start);
-		bounds.extend(end);
-		map.fitBounds(bounds);
+	
+	$scope.test = function() {
+		var location = new google.maps.LatLng(37.7692666, -122.452109);
+		GoogleMaps.addNewMarker(location, "test");
+		console.log("test");
+	};
 
-		var request = {
-			origin: start,
-			destination: end,
-			travelMode: google.maps.TravelMode.WALKING,
-			avoidHighways: true
-		};
-
-		directionsService.route(request, function(response, status) {
-			if(status == google.maps.DirectionsStatus.OK) {
-				directionsDisplay.setDirections(response);
-				directionsDisplay.setMap(map);
-			} else {
-				alert("Directions request from " + start.toUrlValue(6) + " to " + end.toUrlValue(6) + " failed:" + status);
-			}
-		})
-
-	}
+	setTimeout($scope.test, 5000);*/
 }]);

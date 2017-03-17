@@ -1,0 +1,64 @@
+<ion-view style="background: url(img/EAHIBEU9RzGpD7sQWrGn_ionicbg.jpg) no-repeat center;background-size:cover;">
+	<ion-nav-buttons side="right">
+		<button class="button button-icon light" ng-click="chooseLocation()">
+			Search next
+		</button>
+	</ion-nav-buttons>
+	<ion-content>
+		<div class="row">
+			<div class="col col-center">
+				<h1 class="centered light"><strong>{{venueName}}</strong></h1>
+				<p class="centered light">{{venueAddress}}</p>
+			</div>
+		</div>
+		<div id="map" data-tap-disabled="true"></div>
+		<div class="row assertive">
+			<div class="col col-33">
+				<p><b>Category:</b> </p>
+			</div>
+			<div class="col col-67">
+				<p><b>{{venueCategory}}</b></P>
+			</div>
+		</div>
+		<div class="row assertive">
+			<div class="col col-33">
+				<p><b>Price:</b> </p>
+			</div>
+			<div class="col col-67">
+				<p><b>{{venuePrice}}</b></P>
+			</div>
+		</div>
+		<div class="row assertive">
+			<div class="col col-33">
+				<p><b>Rating:</b> </p>
+			</div>
+			<div class="col col-67">
+				<p><b>{{venueRating}}</b></P>
+			</div>
+		</div>
+		<div class="row assertive">
+			<div class="col col-33">
+				<p><b>Customer Tip: </b></p>
+			</div>
+			<div class="col col-67">
+				<p><b>{{venueTip}}</b></P>
+			</div>
+		</div>
+		<div class="row assertive">
+			<div class="col col-33">
+				<p><b>Contact: </b></p>
+			</div>
+			<div class="col col-67">
+				<p><b>{{venueContact}}</b></P>
+			</div>
+		</div>
+		<div class="row assertive">
+			<div class="col col-33">
+				<p><b>Website: </b></p>
+			</div>
+			<div class="col col-67">
+				<p><b>{{venueUrl}}</b></P>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

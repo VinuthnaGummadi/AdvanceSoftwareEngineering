@@ -30,6 +30,16 @@ angular.module('starter')
 			});
 		}
 	}
+	/*
+	function whereAt(lat, lng, limit, query) {
+		return  $http.get(apiUrl + 'venues/trending?ll=' + lat + ',' + lng 
+			+ '&limit=' + limit + '&openNow=1&client_id=' 
+			+ CLIENT_ID + '&client_secret=' + CLIENT_SECRET + '&v=' + v);
+	}
+
+	return {
+		whereAt:whereAt
+	};*/
 }])
 
 .factory('Settings', function() {
@@ -41,7 +51,7 @@ angular.module('starter')
 	return Settings;
 })
 
-.factory('GoogleMaps', function () {
+.factory('GoogleMaps', function ($cordovaGeolocation) {
 
 	var apiKey = false;
 	var map = null;
@@ -51,9 +61,13 @@ angular.module('starter')
 	var directionsService = new google.maps.DirectionsService();
 
 	function initMap(myLat, myLng, venueLat, venueLng) {
-		
+		var options = {enableHighAccuracty: true};
+
+		$cordovaGeolocation.getCurrentPosition(options).then(function (position) {
+
+			var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 			directionsDisplay = new google.maps.DirectionsRenderer();
-			var latLng = new google.maps.LatLng(lat, lng);
+			//var latLng = new google.maps.LatLng(lat, lng);
 			var mapOptions = {
 				center: latLng,
 				zoom: 15,
@@ -65,9 +79,19 @@ angular.module('starter')
 			
 			calcRoute(myLat, myLng, venueLat, venueLng);
 			
+			google.maps.event.addListenerOnce(map, 'idle', function() {
+				addMarker(latLng, "I'm here");
+			});
+			google.maps.event.addListener(document.getElementById('routebtn'), 'click', calcRoute(myLat, myLng, venueLat, venueLng));
+			
+		}, function (error) {
+			console.log("error");
+		});
 	}
 
 	function calcRoute(myLat, myLng, venueLat, venueLng) {
+        
+    
 
 		var start = new google.maps.LatLng(myLat, myLng);
 		var end = new google.maps.LatLng(venueLat, venueLng);
